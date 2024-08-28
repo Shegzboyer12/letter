@@ -3,274 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      /* General Styles */
-      body {
-        font-family: Arial, sans-serif!important;
-        line-height: 1.6!important;
-        margin: 0!important;
-        padding: 0!important;
-        background-color: #dfe2e4!important;
-        color: #333!important;
-      }
-
-      /* Header */
-      header {
-        color: #fff!important;
-        padding: 20px!important;
-        text-align: center!important;
-      }
-
-      /* Discover Section */
-      .discover {
-        display: flex!important;
-        justify-content: center!important;
-        text-align: center!important;
-        font-size: x-large!important;
-        font-weight: bold!important;
-      }
-
-      /* Benefits Section */
-      #sign {
-        font-size: xx-large!important;
-        color: dodgerblue!important;
-      }
-
-      .fit {
-        display: flex!important;
-        align-items: center!important;
-        gap: 6px!important;
-      }
-
-      .fit h3 {
-        font-size: large!important;
-        font-weight: bold!important;
-      }
-
-      /* Transformation Section */
-      .trans img {
-        border-radius: 10%!important;
-        height: 500px!important;
-        width: 50%!important;
-      }
-
-      .trans {
-        display: flex!important;
-        flex-direction: column!important;
-        align-items: center!important;
-        gap: 10px!important;
-        background-color: midnightblue!important;
-        color: white!important;
-        font-weight: bolder!important;
-      }
-
-      .trans p {
-        display: flex!important;
-        flex-direction: column!important;
-        align-items: center!important;
-        padding-left: 30px!important;
-      }
-
-      /* Footer */
-      footer {
-        text-align: center!important;
-        padding: 10px!important;
-        background-color: #caccce!important;
-        color: #282323!important;
-        bottom: 0!important;
-        height: 20%!important;
-        width: 98%!important;
-        font-size: 150%!important;
-        font-weight: 200!important;
-      }
-
-      /* Footer Number Styling */
-      .number {
-        display: flex!important;
-        justify-content: center!important;
-        align-items: center!important;
-        position: relative!important;
-      }
-
-      .number h1 {
-        font-size: 100px!important;
-        font-weight: 100!important;
-        color: #2c3e50!important;
-        margin: 0!important;
-        font-family: "Poppins", sans-serif!important;
-      }
-
-      .nine {
-        position: relative!important;
-        transform: rotate(-5deg)!important;
-      }
-
-      .zero {
-        position: relative!important;
-        left: -15px!important;
-      }
-
-      .six {
-        position: relative!important;
-        transform: rotate(2deg)!important;
-        left: -32px!important;
-        top: -4px!important;
-      }
-
-      /* Footer Socials */
-      .socials {
-        display: grid!important;
-        grid-template-columns: 1fr 2fr!important;
-        gap: 20px!important;
-        align-items: center!important;
-        padding-left: 300px!important;
-      }
-
-      .social-item {
-        display: flex!important;
-        flex-direction: row!important;
-      }
-
-      .social-item i {
-        font-size: 30px!important;
-        color: #2b3e50!important;
-      }
-
-      .social-item a {
-        display: flex!important;
-        flex-direction: row!important;
-        text-decoration: none!important;
-        font-family: Arial, sans-serif!important;
-        font-size: 16px!important;
-        color: #2b3e50!important;
-        gap: 10px!important;
-        justify-content: center!important;
-        padding-left: 160px!important;
-      }
-
-      .social-item a:hover {
-        color: #1a73e8!important;
-      }
-
-      /* Footer Website Link */
-      .web {
-        text-decoration: none!important;
-      }
-
-      #web {
-        font-size: xx-large!important;
-        color: dodgerblue!important;
-      }
-
-      /* Footer Information Styling */
-      .info {
-        text-decoration: underline!important;
-        color: #282323!important;
-      }
-
-      /* Responsive Styles */
-      @media only screen and (max-width: 1200px) {
-        .discover {
-          font-size: large!important;
-          padding: 0 20px!important;
-        }
-
-        .trans img {
-          height: 400px!important;
-          width: 70%!important;
-        }
-
-        .number h1 {
-          font-size: 80px!important;
-        }
-
-        .socials {
-          padding-left: 200px!important;
-          grid-template-columns: 1fr!important;
-        }
-
-        .social-item a {
-          padding-left: 0!important;
-          justify-content: flex-start!important;
-        }
-      }
-
-      @media only screen and (max-width: 768px) {
-        .header img {
-          display: flex!important;
-          height: 400px!important;
-          width: 105%!important;
-        }
-        .discover {
-          font-size: medium!important;
-          padding: 0 10px!important;
-        }
-
-        .fit {
-          flex-direction: row!important;
-          align-items: flex-start!important;
-        }
-
-        .trans img {
-          height: 300px!important;
-          width: 90%!important;
-        }
-
-        .socials {
-          padding-left: 0!important;
-          grid-template-columns: 1fr 2fr!important;
-        }
-        .number {
-          display: flex!important;
-          gap: 6px!important;
-        }
-
-        .social-item a {
-          padding-left: 0!important;
-          justify-content: flex-start!important;
-        }
-      }
-
-      @media only screen and (max-width: 480px) {
-        .discover {
-          font-size: small!important;
-          padding: 0 5px!important;
-        }
-
-        .fit {
-          flex-direction: column!important;
-          align-items: flex-start!important;
-          font-size: small!important;
-        }
-        .number h1 {
-          display: flex!important;
-          gap: 9!important;
-        }
-
-        .trans img {
-          height: 200px!important;
-          width: 100%!important;
-        }
-
-        .social-item i {
-          font-size: 24px!important;
-        }
-
-        .social-item a {
-          font-size: 14px!important;
-          padding-left: 0!important;
-          justify-content: flex-start!important;
-        }
-
-        .number h1 {
-          font-size: 60px!important;
-        }
-
-        footer {
-          font-size: 100%!important;
-        }
-      }
-    </style>
     <title>Azure Cloud Solutions</title>
     <link
       rel="stylesheet"
@@ -278,10 +10,10 @@
     />
   </head>
   <body>
-    <header class="header">
-      <img width="100%" height="720px" src="img/first page.png" alt="" />
-    </header>
-    <div class="discover">
+    <div style="display: flex; justify-content: center">
+      <img width="70%" height="600px" src="img/first page.png" alt="" />
+    </div>
+    <div style="text-align: center; font-size: large; font-weight: bold">
       <p>
         Discover how cloud solutions (AZURE) can transform your operations,
         enhance security, and provide scalable resources tailored to your needs.
@@ -289,9 +21,14 @@
     </div>
     <div class="benefits">
       <div class="benefit">
-        <div class="fit">
-          <i class="fa-solid fa-circle-check" id="sign"></i>
-          <h3>Operational Efficiency:</h3>
+        <div style="display: flex; align-items: center; gap: 5px">
+          <i
+            class="fa-solid fa-circle-check"
+            style="font-size: x-large; color: #2a7ae1"
+          ></i>
+          <h3 style="font-size: large; font-weight: bold">
+            Operational Efficiency:
+          </h3>
           <p>
             Azure automates routine tasks, streamlines workflows, and reduces
             the need for on-premises infrastructure, leading to cost savings and
@@ -300,9 +37,14 @@
         </div>
       </div>
       <div class="benefit">
-        <div class="fit">
-          <i class="fa-solid fa-circle-check" id="sign"></i>
-          <h3>Enhanced Security:</h3>
+        <div style="display: flex; align-items: center; gap: 5px">
+          <i
+            class="fa-solid fa-circle-check"
+            style="font-size: x-large; color: #2a7ae1"
+          ></i>
+          <h3 style="font-size: large; font-weight: bold">
+            Enhanced Security:
+          </h3>
           <p>
             Azure provides built-in security features like encryption, threat
             detection, and identity management to protect your data and
@@ -311,9 +53,12 @@
         </div>
       </div>
       <div class="benefit">
-        <div class="fit">
-          <i class="fa-solid fa-circle-check" id="sign"></i>
-          <h3>Scalability:</h3>
+        <div style="display: flex; align-items: center; gap: 5px">
+          <i
+            class="fa-solid fa-circle-check"
+            style="font-size: x-large; color: #2a7ae1"
+          ></i>
+          <h3 style="font-size: large; font-weight: bold">Scalability:</h3>
           <p>
             Azure offers scalable resources, allowing you to quickly adjust
             computing power, storage, and networking to match your business
@@ -322,9 +67,12 @@
         </div>
       </div>
       <div class="benefit">
-        <div class="fit">
-          <i class="fa-solid fa-circle-check" id="sign"></i>
-          <h3>Global Reach:</h3>
+        <div style="display: flex; align-items: center; gap: 5px">
+          <i
+            class="fa-solid fa-circle-check"
+            style="font-size: x-large; color: #2a7ae1"
+          ></i>
+          <h3 style="font-size: large; font-weight: bold">Global Reach:</h3>
           <p>
             Azure's extensive global network enables you to deploy applications
             and services closer to your users, improving performance and
@@ -333,9 +81,14 @@
         </div>
       </div>
       <div class="benefit">
-        <div class="fit">
-          <i class="fa-solid fa-circle-check" id="sign"></i>
-          <h3>Disaster Recovery:</h3>
+        <div style="display: flex; align-items: center; gap: 5px">
+          <i
+            class="fa-solid fa-circle-check"
+            style="font-size: x-large; color: #2a7ae1"
+          ></i>
+          <h3 style="font-size: large; font-weight: bold">
+            Disaster Recovery:
+          </h3>
           <p>
             Azure's backup and disaster recovery solutions ensure that your data
             is safe and can be quickly restored in case of unexpected
@@ -344,70 +97,133 @@
         </div>
       </div>
     </div>
-
-    <div class="trans">
-      <p>
+    <div
+      class="trans"
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: #1a73e8;
+        height: 480px;
+        width: 100%;
+        color: white;
+        font-weight: bolder;
+        justify-content: center;
+      "
+    >
+      <p style="font-size: medium">
         Transform Your Operaons with Azure - Get Started with a Free Consultaon.
       </p>
-      <img src="img/image.png" alt="" />
-      <p>
+      <img
+        src="img/image.png"
+        alt=""
+        style="border-radius: 8%; height: 320px; width: 30%"
+      />
+      <p style="font-size: medium; width: 100%">
         Experience the future of business operations with Azure's cloud
         solutions. Pair your cloud journey with our expert-led program to
-        enhance security, optimize processes, and scale resources ac cording to
+        enhance security, optimize processes, and scale resources according to
         your business demands. Whether you're looking to make minor improvements
         or undertake a full-scale transformation, our 1-on-1 coaching delivers
         customized solutions, including resource allocation and advanced
         security measures, perfectly suited to your business.
       </p>
     </div>
-    <footer class="footer">
-      <div class="number">
-        <h1 class="nine">9</h1>
-        <h1 class="zero">0</h1>
-        <h1 class="six">6</h1>
+    <footer
+      class="footer"
+      style="
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        color: #282323;
+        bottom: 0;
+        width: 98.5;
+        height: 50px;
+        font-size: 150%;
+        font-weight: 200;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          font-size: 30px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          gap: 10px;
+          padding-left: 50px;
+        "
+      >
+        <h1 style="position: relative; transform: rotate(-4 deg)">9</h1>
+        <h1 style="position: relative; left: -20px">0</h1>
+        <h1
+          style="position: relative;transform: rotate(2deg);left: -39px;top-7px"
+        >
+          6
+        </h1>
       </div>
-      <div class="socials">
-        <div class="social-item">
+
+      <div
+        class="socials"
+        style="
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          align-items: center;
+          padding-left: 450px;
+        "
+      >
+        <div style="display: flex; flex-direction: row">
           <a
             href="https://www.linkedin.com/company/906-global-services/posts/?feedView=all"
+            style="text-decoration: none; color: #282323"
           >
             <i class="fa-brands fa-linkedin"></i>
             906 GLOBAL SERVICES
           </a>
         </div>
-        <div class="social-item">
-          <a href="https://web.facebook.com/profile.php?id=61560563675582">
+        <div style="display: flex; flex-direction: row">
+          <a
+            href="https://web.facebook.com/profile.php?id=61560563675582"
+            style="text-decoration: none; color: #282323"
+          >
             <i class="fa-brands fa-facebook"></i>
             906 GLOBAL SERVICES
           </a>
         </div>
-        <div class="social-item">
-          <a href="https://www.instagram.com/906globalhq/">
+        <div style="display: flex; flex-direction: row">
+          <a
+            href="https://www.instagram.com/906globalhq/"
+            style="text-decoration: none; color: #282323"
+          >
             <i class="fa-brands fa-instagram"></i>
             906GLOBALHQ
           </a>
         </div>
-        <div class="social-item">
-          <a href="https://x.com/906_global">
+        <div style="display: flex; flex-direction: row">
+          <a
+            href="https://x.com/906_global"
+            style="text-decoration: none; color: #282323"
+          >
             <i class="fa-brands fa-twitter"></i>
             906_GLOBAL
           </a>
         </div>
       </div>
-
-      <div class="info">
+      <div style="text-decoration: underline; color: #282323">
         <p>
           Cloud Solutions | Resources | Trainings |
-          <a href="https://www.906global.com/Contact">Contact Us</a>
+          <a href="https://www.906global.com/Contact" style="color: #282323"
+            >Contact Us</a
+          >
         </p>
       </div>
 
       <p>Email: <a href="mailto:info@906global.com">info@906global.com</a></p>
       <p>2 Olukolu Street, Lekki Phase 2, Lagos.</p>
-      <a href="https://www.906global.com/" class="web"
-        ><i class="fa-light fa-globe-pointer" id="web"></i>
-        <p>www.906global.com</p></a
-      >
+      <a href="https://www.906global.com/" style="color: #282323;text-decoration: underline;"> www.906global.com</a>
     </footer>
   </body>
 </html>
